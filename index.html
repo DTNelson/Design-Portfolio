@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Dana Trancoso Nelson</title>
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="Dana Trancoso Nelson">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/responsive-nav.css">
+  
+    
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- smooth scroll script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  <script src="js/responsive-nav.js"></script>
+  
+</head>
+
+<body>
+<!-- Primary Page Layout
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Header-->
+  
+  <header id="Home">
+   
+    <div class="logo">
+	  <img src="images/Gizmo_DTN.png" alt="Gizmo Puppy" />
+    </div><!--logo-->
+	<div class="container">
+        <span class="nav__button"><i class="licon-reorder"></i></span>
+          <nav class="navigation">
+           <a href="Index.html#Home">Home</a>
+      	   <a href="Index.html#Services">About</a>
+      	   <a href="Index.html#Work">Work</a>
+      	   <a href="Index.html#Contact">Contact</a>
+          </nav>
+	</div><!-- end container-->
+	   
+ 		<!-- Original Navigation menu
+     	  <div class="eleven columns">
+            <nav class="nav-collapse">
+              <ul>
+                <li><a href="#Home" class="smoothScroll">Home</a></li>
+                <li><a href="#Services" class="smoothScroll">About</a></li>
+                <li><a href="#Work" class="smoothScroll">Work</a></li>
+                <li><a href="#Contact" class="smoothScroll">Contact</a></li>
+              </ul>
+            </nav>
+          </div> --><!-- eleven columns-->
+   
+     <div class="container">  
+	   <div class="row">
+         <div class="twelve columns header-text">
+    	  <h1>Dana Trancoso Nelson</h1>
+    	  <h2>UX/UI and Web Design</h2>
+    	 </div> <!-- twelve columns-->
+       </div> <!-- row-->
+	      
+	   <div class="row">
+         <div class="twelve columns section-pad-top">
+    	  <p class="lt-text" style="text-align:center">Learn More About My Experience...</p>
+    	 </div> <!-- twelve columns-->
+       </div> <!-- row-->
+   
+       <div class="row">
+         <div class="twelve columns center">
+           <a href="#Services"><i class="fa fa-chevron-circle-down fa-4x" id="top-fa"></i></a>
+    	 </div> <!--end twelve columns-->
+       </div> <!--end row-->
+      </div><!--end container--> 
+   </header>
+   
+ 
+ <div class="section" id="Services">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+	    <h1 class="pewter section-heading">what I can do</h1>
+	   </div> <!-- twelve columns-->
+    </div> <!-- row-->
+    
+	<div class="row">
+	  <div class="one-third column">
+	    <div class="skill">
+          <h4>HTML/CSS</h4>
+		  <div class="small-pad">
+		    <img src="images/Coding_icon.png" alt="Coding" />
+		  </div>
+          <p class="dark-text">Code HTML5/CSS3 from scratch or from frameworks and boilerplates such as Bootstrap and Skeleton. 
+		  I'm constantly learning new CSS techniques, and I'm also becoming more familiar with Javascript and JQuery.<br>
+		  I learn new techniques via CodePen, CSS-Tricks, StackExchange, Bootply, GetBootstrap, and Lynda.com to 
+		  gain insight from other talented professionals.</p>
+        </div><!-- skill-->
+	  </div><!-- one-third column-->
+	  
+	  <div class="one-third column">
+	    <div class="skill">
+          <h4>UX/UI Design</h4>
+		    <div class="small-pad">
+			  <img src="images/UX.png" alt="UX/UI Design" />
+			</div>
+            <p class="dark-text">Collaborate to ensure design requirements are fulfilled, user experiences are optimized, 
+		    and user interfaces are simple and intuitive.<br>
+		    Firm enthusiast of researching, wireframing (Balsamiq, Axure), using Web and Mobile toolkits (PhotoShop/Illustrator), 
+		    sharing prototypes (Invision), and designing user interfaces with PhotoShop and Illustrator. <br />
+			<!--I regularly research articles and design techniques on Smashing Magazine, SpeckyBoy, Creative Bloq, Pttrns, UXMag, and 
+			Mobile-Patterns to absorb inspiration.</p>-->
+        </div><!-- skill-->
+	  </div><!-- one-third column-->
+	  
+	  <div class="one-third column">
+	    <div class="skill">
+          <h4>Technical Writing</h4>
+		  <div class="small-pad">
+		    <img src="images/Writing.png" alt="Technical Writing" />
+		  </div>
+          <p class="dark-text">Ten years' experience writing software/hardware documentation, 
+		  with advanced knowledge in popular XML-based help authoring tools including MadCap Flare and RoboHelp.<br>
+		  Experienced in content strategy, requirements gathering, Agile software development methodologies, interviewing, project management, 
+		  and follow-through.</p>
+        </div><!-- skill-->
+	  </div><!-- one-third column-->
+    </div><!-- row-->
+  </div><!-- container-->
+ </div><!-- section-->
+ 
+ <div class="section-dk" id="Work">
+  <div class="container">
+    
+	<div class="row">
+      <div class="twelve columns">
+	    <h1 class="section-heading">my gallery</h1>
+	   </div> <!-- twelve columns-->
+    </div> <!-- row-->
+	
+	<div class="row">
+      <div class="seven columns">
+	   <img class="u-max-full-width img-container"  src="images/rivendell_screenshot.jpg">
+	  </div> <!-- seven columns-->
+      
+	  <div class="five columns">
+	    <h3 class="tangerine left-align">Rivendell Real Estate</h3>
+		<h4 class="off-white left-align">Website Re-branding & Re-Design</h4>
+		<p class="lt-text left-align">I re-designed <a class="lt-link" href="http://www.rivendellre.com/" target="_blank">Rivendell Real Estate's</a> website using the latest Bootstrap framework.
+		The goals were to modernize the site while making it simple, clean, directive, and responsive to all devices.</p>
+	  <a class="button" href="Rivendell_Project.html">View Project Details</a>
+	  </div> <!-- five columns-->
+	</div> <!-- row-->
+	<hr />
+	
+	<div class="row">
+      <div class="seven columns">
+	   <img class="u-max-full-width img-container" src="images/Paycrave_main.png">
+	  </div> <!--end seven columns-->
+      
+	  <div class="five columns">
+	    <h3 class="tangerine left-align">Paycrave Mobile App</h3>
+		<h4 class="off-white left-align">Mobile App UX/UI Design</h4>
+		<p class="lt-text left-align">During my Bloc.io apprenticeship, I designed a mobile iOS app called Paycrave, an all-in-one food truck locator, order, purchase, and rating app.
+		 The goals were to provide a comprehensive feature list, yet delivered in a simple and intuitive manner.</p>
+	    <a class="button" href="Paycrave.html">View Project Details</a>
+	  </div> <!--end five columns-->
+	</div> <!--end row-->
+	<hr />
+	
+	<div class="row">
+      <div class="seven columns">
+	    <img class="u-max-full-width img-container" src="images\Jottly_Rainy_Seafoam.jpg">
+	  </div> <!-- seven columns-->
+      
+	  <div class="five columns">
+	    <h3 class="tangerine left-align">Jott.ly Landing Page</h3>
+		<h4 class="off-white left-align">Web Design & Development</h4>
+		<p class="lt-text left-align">During my Bloc.io apprenticeship, I designed a responsive website for a ficticious SAAS content sharing site called Jott.ly. 
+		The goals were to design and develop a simple, intuitive, and responsive landing page for the site.</p>
+	    <a class="button" href="Jottly.html">View Project Details</a>
+		
+	  </div> <!-- five columns-->
+	</div> <!-- row-->
+	
+  </div>
+  </div>
+  
+  <div class="section" id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+	      <h1 class="pewter section-heading">let's get in touch</h1>
+		  <p class="dark-text" id="main-text">I would love to hear from you, so please drop me a line. Whether you have a question, would like a quote, need more details 
+		  about my experience or anything, please send me a message.</p>
+		  <p class="dark-text" id="main-text"><b>Email:</b>  
+		  	 <a href="mailto:danatrancosonelson@gmail.com" title="Send me a message.">danatrancosonelson@gmail.com</a>
+		  <p class="dark-text" id="main-text"><b>Mobile:</b>  303.931.5257</p>
+	    </div> <!-- twelve columns-->
+      </div> <!-- row-->
+	  
+	  <div class="row">
+	    <div class="three columns">
+		 <a href="mailto:danatrancosonelson@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+		</div>
+		
+		<div class="three columns">
+		 <a href="tel:303-931-5257"><i class="fa fa-phone-square fa-3x"></i></a>
+		</div>
+		
+		<div class="three columns">
+		  <a href="https://www.linkedin.com/pub/dana-trancoso-nelson/b/449/621" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+		</div>
+		
+		<div class="three columns">
+		  <a href="http://www.facebook.com/trancosonelson" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+		</div>
+	  </div><!-- row-->
+	  
+    <script type="text/javascript" src="https://form.jotform.com/jsform/52158649862164"></script>
+	  
+    </div><!-- container-->
+  </div><!--section-->
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+	    <div class="one column">
+	      <img src="images/Gizmo_DTN.png" class=".u-max-full-width" alt="Gizmo Puppy" />
+        </div>
+		
+		<p class="lt-text center-align" id="sig-margin">&copy;2015, Dana Trancoso Nelson</p>
+		  <!--original footer nav
+    		  <nav class="footer">
+    	        <ul>
+    		      <li><a href="#Home" class="smoothScroll">Home</a></li>
+    		      <li><a href="#Services" class="smoothScroll">About</a></li>
+    		      <li><a href="#Work" class="smoothScroll">Work</a></li>
+    		      <li><a href="#Contact" class="smoothScroll">Contact</a></li>
+    		    </ul>
+    	      </nav> footer nav-->
+	   
+	  </div> <!-- row-->
+	</div>
+  </footer><!--end footer-->
+  
+<!-- End Document
+––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<!-- jQuery  -->
+	 <script>
+      var btn = document.querySelector('.nav__button'), container = document.querySelector('.container');
+      btn.addEventListener('click', function () {
+          this.classList.toggle('open');
+          container.classList.toggle('active');
+      });
+	 </script>
+   
+</body>
+</html>
