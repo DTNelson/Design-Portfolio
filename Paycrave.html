@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Dana Trancoso Nelson</title>
+  <meta name="description" content="Mobile App">
+  <meta name="author" content="Dana Trancoso Nelson">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/swipebox.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- smooth scroll script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  
+</head>
+
+<body>
+<body class="no-touch">
+<!-- Primary Page Layout
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="section" id="Paycrave-Screens">
+  <div class="container">
+    <span class="nav__button"><i class="licon-reorder"></i></span>
+   	  <nav class="navigation">
+         <a href="Index.html#Home">Home</a>
+    	 <a href="Index.html#Services">About</a>
+    	 <a href="Index.html#Work">Work</a>
+    	 <a href="Index.html#Contact">Contact</a>
+      </nav>
+   </div>
+   
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+	    <h1 class="pewter section-heading" id="subpage-header">Paycrave Mobile App</h1>
+		<h3 class="lt-pewter">Mobile App UX/UI Design</h3>
+	   </div> <!--end twelve columns-->
+    </div> <!--end row-->
+	
+    <div class="row">
+	  <div class="section-description">
+		<p class="dark-text">
+		During my 2015 Bloc apprenticeship, I designed a mobile iOS 8 app called Paycrave, 
+		an all-in-one food truck locator, order, purchase, and rating app. 
+		The goals were to provide a comprehensive feature list, yet be delivered in a simple 
+		and intuitive manner. Bloc provided the basic functional requirements, user stories, 
+		<a class="dk-link swipebox" href="images/Paycrave_Style_Guide.png" title="Bloc.io Style Guide">style guide, and logo</a>.
+		I was tasked with developing the UX, UI, and IxD. 
+		</p>
+	  </div> <!--end section-description twelve columns-->
+    </div> <!--end row-->
+	<hr />
+	</div> <!--end container-->
+	
+	
+	<div class="container">
+	  <div class="row">
+	    <div class="six columns">
+    		<a href="images/Paycrave_Novice_persona.png" class="swipebox" title="Novice App User Persona">
+    		  <img class="u-max-full-width" id="border-right-bottom" src="images/Paycrave_Novice_persona.png"></a>
+			<a href="images/Paycrave_Exp_persona.png" class="swipebox" title="Experienced App User Persona">
+        	  <img class="u-max-full-width img-top" id="border-right-bottom" src="images/Paycrave_Exp_persona.png"></a>
+	    </div> <!--  columns-->
+      
+	  <div class="six columns">
+	    <h3 class="pewter left-align" id="Personas">Personas</h3>
+		<h4 class="pewter left-align">Novice vs Experienced App Users</h4>
+		<p class="dark-text left-align">I developed two personas for the Paycrave app. The first end-user, Mary, a retiree, is considered
+		a novice user of mobile apps and only uses them when necessary. Her retiree friends recently started some local food truck businesses, 
+		and she wants to be able to support her friends. Mary wants to locate their trucks, order from her friends' trucks, then rate them to provide
+		moral support.  <br /><br />
+		Trey, an experienced mobile app user and software developer, wants to make fast, efficient, and healthier food choices to accommodate
+		his busy schedule. To save time, Trey wants to be able to decide on a menu item and pay online before picking up his orders. </p>
+	  </div> <!-- columns-->
+	  </div><!-- row-->
+	<hr />
+	</div><!-- container-->
+	
+	
+	<div class="container">
+        <div class="row">
+          <div class="twelve columns">
+	          <h1 class="pewter section-heading">the design</h1>
+    			<div class="section-description">
+				  <p class="dark-text">Bloc.io provided the following user stories for the Paycrave mobile app:</p>
+			      <ul id="bullet-text">
+    				  <li>As a user, I want to view food trucks near me on a map.</li>
+    				  <li>As a user, I want to select a truck, view details, and see a menu.</li>
+    				  <li>As a user, I want to create an account and view recent transactions.</li>
+    				  <li>As a user, I want to choose items to purchase and pay for them using my phone.</li>
+    				  <li>As a user, I want to rate and review a food truck, and view other ratings and reviews.</li>
+				  </ul>
+				 <p class="dark-text">
+    			  For a full demonstration of Paycrave's interaction design, see my 
+    			  <a class="dk-link" href="http://www.rivendellre.com/" target="_blank">Invision prototype.</a> 
+    			</div>
+				
+	      </div> <!-- twelve columns-->
+        </div> <!-- row-->
+    
+    	<div class="wrap">
+    	  <div class="box">
+    	    <div class="boxInner">
+			  <a href="images/Main_Login_1.png" class="swipebox" title="Main Login Screen">
+    		    <img src="images/Main_Login_1.png" alt="Main Login Screen" /></a>
+              <div class="titleBox">Main Login</div>
+    	    </div><!-- box inner-->
+    	  </div><!-- box-->
+		  
+		
+       	  <div class="box">
+       	    <div class="boxInner">
+			  <a href="images/Login_ReturningUser.png" class="swipebox" title="Returning User Login">
+       		    <img src="images/Login_ReturningUser.png" alt="User Login" /></a>
+                 <div class="titleBox">User Login</div>
+       	    </div><!-- box inner-->
+       	  </div><!-- box-->
+	
+    	  <div class="box">
+    	    <div class="boxInner">
+    		  <a href="images/Create_Account.png" class="swipebox" title="Create Account">
+			    <img src="images/Create_Account.png" alt="Create Account" /></a>
+              <div class="titleBox">Create Account</div>
+    	    </div><!-- box inner-->
+    	  </div>
+	
+       	  <div class="box">
+       	    <div class="boxInner">
+			  <a href="images/Main_Sidebar_Menu.png" class="swipebox" title="Main Sidebar Menu">
+       		    <img src="images/Main_Sidebar_Menu.png" alt="Main Menu" /></a>
+              <div class="titleBox">Main Menu</div>
+       	    </div><!-- box inner-->
+       	  </div>
+	
+    	  <div class="box">
+    	    <div class="boxInner">
+			  <a href="images/Link_Card.png" class="swipebox" title="Link Payment Card">
+    		    <img src="images/Link_Card.png" alt="Link Payment Card" /></a>
+              <div class="titleBox">Link Payment</div>
+    	    </div><!-- box inner-->
+    	  </div>
+    	  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Nearby_Map.png" class="swipebox" title="Nearby Food Trucks">
+        	    <img src="images/Nearby_Map.png" alt="Nearby Map" /></a>
+              <div class="titleBox">Nearby Map</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Truck_Details.png" class="swipebox" title="Truck Details">
+        	    <img src="images/Truck_Details.png" alt="Truck Details" /></a>
+              <div class="titleBox">Truck Details</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Choose_Category.png" class="swipebox" title="Choose Food Category">
+        	    <img src="images/Choose_Category.png" alt="Choose Category" /></a>
+              <div class="titleBox">Choose Category</div>
+        	</div><!-- box inner-->
+          </div>
+		 
+		 <div class="box">
+            <div class="boxInner">
+			  <a href="images/Select_Items.png" class="swipebox" title="Select Items">
+        	    <img src="images/Select_Items.png" alt="Select Items" /></a>
+              <div class="titleBox">Select Items</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		 <div class="box">
+            <div class="boxInner">
+			  <a href="images/Entree_Info.png" class="swipebox" title="Entree Details">
+        	    <img src="images/Entree_Info.png" alt="Entree Details" /></a>
+              <div class="titleBox">Entree Details</div>
+        	</div><!-- box inner-->
+          </div> 
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Order_Summary.png" class="swipebox" title="Order Summary">
+        	    <img src="images/Order_Summary.png" alt="Order Summary" /></a>
+              <div class="titleBox">Order Summary</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Select_Payment_Type.png" class="swipebox" title="Select Payment">
+        	    <img src="images/Select_Payment_Type.png" alt="Select Payment" /></a>
+              <div class="titleBox">Select Payment</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Rate_Order.png" class="swipebox" title="Rate Order">
+        	    <img src="images/Rate_Order.png" alt="Rate Order" /></a>
+              <div class="titleBox">Rate Order</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Recent_Purchases.png" class="swipebox" title="Recent Purchases">
+        	    <img src="images/Recent_Purchases.png" alt="Recent Purchases" /></a>
+              <div class="titleBox">Recent Purchases</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Order_Details.png" class="swipebox" title="Order Details">
+        	    <img src="images/Order_Details.png" alt="Order Details" /></a>
+              <div class="titleBox">Order Details</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Profile_NewUser.png" class="swipebox" title="New User Profile">
+        	    <img src="images/Profile_NewUser.png" alt="New User Profile" /></a>
+              <div class="titleBox">New User Profile</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		  <div class="box">
+            <div class="boxInner">
+			  <a href="images/Profile_Established.png" class="swipebox" title="Established User Profile">
+        	    <img src="images/Profile_Established.png" alt="Established User Profile" /></a>
+              <div class="titleBox">Established Profile</div>
+        	</div><!-- box inner-->
+          </div>
+		  
+		 
+    	 </div><!--end wrap-->
+	   </div><!--end container-->
+	   </div><!--end section-->
+	   
+	<!--FOOTER and NAV-->  
+    <footer>
+     <div class="container">
+      <div class="row">
+	    <div class="one column">
+	      <img src="images/Gizmo_DTN.png" class=".u-max-full-width" alt="Gizmo Puppy" />
+        </div> <!-- one column-->
+		<div class="eleven columns">
+		  <p class="lt-text" id="sig-margin">&copy;2015, Dana Trancoso Nelson</p>
+		  <!--original footer nav
+		  <nav class="footer">
+	        <ul>
+		      <li><a href="Index.html#Home" class="smoothScroll">Home</a></li>
+		      <li><a href="Index.html#Services" class="smoothScroll">About</a></li>
+		      <li><a href="Index.html#Work" class="smoothScroll">Work</a></li>
+		      <li><a href="Index.html#Contact" class="smoothScroll">Contact</a></li>
+		    </ul>
+	      </nav> footer nav-->
+	    </div> <!-- eleven columns-->
+	  </div> <!-- row-->
+	  </div> <!--container-->
+    </footer>
+	
+<!-- End Document
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<!-- jQuery  -->
+   <script>
+    var btn = document.querySelector('.nav__button'), container = document.querySelector('.container');
+    btn.addEventListener('click', function () {
+        this.classList.toggle('open');
+        container.classList.toggle('active');
+    });
+	</script>
+	
+   <script src="js/fixed-responsive-nav.js"></script> 
+   <script>var nav = responsiveNav(".nav-collapse");</script>
+   <script src="lib/jquery-2.1.0.min.js"></script>
+   <script src="js/jquery.swipebox.js"></script>
+      <script type="text/javascript">
+            ;( function( $ ) {
+            
+            	$( '.swipebox' ).swipebox();
+            
+            } )( jQuery );
+    	  </script>	
+	  
+</body>
+</html>
