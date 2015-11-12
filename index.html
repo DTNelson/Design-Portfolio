@@ -59,9 +59,9 @@
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!-- Header-->
   
-  <section id="Home">
+  <div class="section" id="Home">
     <div class="logo">
-	  <img src="images/Gizmo_DTN.png" alt="Gizmo Puppy" />
+	  <img class="left-align" src="images/Gizmo_DTN.png" alt="Gizmo Puppy" />
     </div><!--logo-->
 	
 	<div class="container">
@@ -106,7 +106,7 @@
     	 </div> <!--end twelve columns-->
        </div> <!--end row-->
       </div><!--end container--> 
-  </section>
+  </div>
    
  
  <div class="section" id="Services">
@@ -280,13 +280,13 @@
 <!-- End Document
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <!-- jQuery  -->
-	 <script>
-      var btn = document.querySelector('.nav__button'), container = document.querySelector('.container');
-      btn.addEventListener('click', function () {
+  <script>
+    var btn = document.querySelector('.nav__button'), container = document.querySelector('.container');
+    btn.addEventListener('click', function () {
           this.classList.toggle('open');
           container.classList.toggle('active');
-      });
-	 </script>
+    });
+  </script>
    
 </body>
 </html>
