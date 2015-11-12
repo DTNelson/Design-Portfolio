@@ -158,7 +158,8 @@ body {
   font-weight: 400;
   font-family: "Montserrat", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; 
-  overflow-x: hidden; }
+  overflow-x: hidden !important; 
+  }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -517,6 +518,9 @@ body > header {
   height:auto;
   display:block;
 }
+  @media (max-width: 550px){
+   .logo {margin:0 0 0 10px;}
+  }
 
 .center {
   text-align: center;
