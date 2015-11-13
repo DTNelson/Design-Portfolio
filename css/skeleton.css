@@ -519,7 +519,7 @@ body > header {
   display:block;
 }
   @media (max-width: 550px){
-   .logo {margin:0 0 0 10px;}
+   .logo {margin:0; float:none;}
   }
 
 .center {
@@ -529,15 +529,15 @@ body > header {
 
 h1 { color:#b5edfd; font-family: 'Montserrat'; font-size: 6.0rem; line-height: 1.2;  letter-spacing: -.1rem; text-align:center;}
   @media (max-width: 480px) { 
-   h1 {font-size:5.0rem; }
+   h1 {font-size:3.0rem; }
   }
 
-h2 { color:#eaeaea; font-family: 'Montserrat'; font-size: 4.0 rem; line-height: 1.25; letter-spacing: -.1rem; text-align:center;}
-  @media (max-width: 480px) { 
-   h2 {font-size:3rem; }
+h2 { color:#eaeaea; font-family: 'Montserrat'; font-size: 4.0 rem; line-height: 1.2; letter-spacing: -.1rem; text-align:center;}
+  @media (max-width: 480px) {
+   h2 {font-size:2rem; }
   }
   
-h3 { color:#272b35; font-family: 'Montserrat'; font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; text-align:center;}
+h3 { color:#272b35; font-family: 'Montserrat'; font-size: 3.0rem; line-height: 1.2;  letter-spacing: -.1rem; text-align:center;}
    @media (max-width: 480px) { 
    h3 {font-size:2.5rem; }
   }
@@ -637,6 +637,9 @@ header nav ul li a:active {
 .section-pad-top {
  margin-top: 200px; 
 }
+  @media (max-width: 768px) {
+   .section-pad-top { margin:0 }
+      }
 
 .dark-text {
    font-family: "Muli", "Raleway", Arial, sans-serif; 
@@ -681,6 +684,9 @@ header nav ul li a:active {
  #subpage-header {
    font-size: 3em;
   }
+   @media (max-width: 768px) {
+    #subpage-header { font-size: 2em; margin-top:30px; }
+   }
   
  #subhead {
   font-family: "muli", "Raleway", Arial, sans-serif; 
@@ -1020,6 +1026,7 @@ footer nav ul li a:active {
   border-radius: 2px;
   border: 2px solid #fbebb3;
 }
+
 /*FLOATING NAV MENU*/
 
 .navigation {
@@ -1074,8 +1081,8 @@ footer nav ul li a:active {
   
   .container span.nav__button {
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 0;
+  right: 0;
   margin: 1.75rem;
   width: 50px;
   height: 50px;
@@ -1092,6 +1099,13 @@ footer nav ul li a:active {
   user-select: none;
   -webkit-touch-callout: none;
 }
+  
+  @media (max-width: 40rem) {
+   .container span.nav__button {
+   top: 0;
+   right: 35px;
+  }
+  }
 
 .container span.nav__button.open { background-color: rgba(15, 17, 21, 0.7); }
 
