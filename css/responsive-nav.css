@@ -42,7 +42,7 @@
   user-select: none;
 }
 
-a.nav-toggle {color:#f8ba70; font-size:20px;}
+a.nav-toggle {color:#f8ba70; font-size:16px;}
 a.nav-toggle.active { }
 
 @media screen and (min-width: 40em) {

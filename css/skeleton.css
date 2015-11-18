@@ -178,10 +178,10 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 @media (min-width: 550px) {
   h1 { font-size: 4.0rem; }
   h2 { font-size: 3.5rem; }
-  h3 { font-size: 2.5rem; }
-  h4 { font-size: 2.0rem; }
-  h5 { font-size: 1.75rem; }
-  h6 { font-size: 1.5rem; }
+  h3 { font-size: 2.0rem; }
+  h4 { font-size: 1.75rem; }
+  h5 { font-size: 1.5rem; }
+  h6 { font-size: 1.0rem; }
 }
 
 p {
@@ -537,14 +537,14 @@ h2 { color:#eaeaea; font-family: 'Montserrat'; font-size: 4.0 rem; line-height: 
    h2 {font-size:2rem; }
   }
   
-h3 { color:#272b35; font-family: 'Montserrat'; font-size: 3.0rem; line-height: 1.2;  letter-spacing: -.1rem; text-align:center;}
+h3 { color:#272b35; font-family: 'Montserrat'; font-size: 2.5rem; line-height: 1.2;  letter-spacing: -.1rem; text-align:center;}
    @media (max-width: 480px) { 
-   h3 {font-size:2.5rem; }
+   h3 {font-size:2.0rem; }
   }
   
 h4 { color:#272b35; font-family: 'Montserrat'; font-size: 2.4rem; font-weight:400; line-height: 1.35; letter-spacing: -.08rem; text-align:center;}
   @media (max-width: 480px) { 
-   h4 {font-size:2rem; }
+   h4 {font-size:1.5rem; }
   } 
   
 .header-text {
@@ -638,8 +638,8 @@ header nav ul li a:active {
  margin-top: 200px; 
 }
   @media (max-width: 768px) {
-   .section-pad-top { margin:0 }
-      }
+   .section-pad-top { margin-top:50px; }
+   }
 
 .dark-text {
    font-family: "Muli", "Raleway", Arial, sans-serif; 
@@ -1028,10 +1028,9 @@ footer nav ul li a:active {
 }
 
 /*FLOATING NAV MENU*/
-
 .navigation {
   position: fixed;
-  text-align:center;
+  text-align: center;
   width: 14rem;
   height: 100vh;
   top: 0;
@@ -1047,6 +1046,7 @@ footer nav ul li a:active {
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
+  
 
 .navigation a {
   color: #f8ba70;
@@ -1054,7 +1054,6 @@ footer nav ul li a:active {
   margin-top:4em;
   text-transform:uppercase;
   text-decoration:none;
-  
 }
 
 .navigation a:hover { color: #e15b1c; }
@@ -1081,8 +1080,8 @@ footer nav ul li a:active {
   
   .container span.nav__button {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   margin: 1.75rem;
   width: 50px;
   height: 50px;
@@ -1100,13 +1099,18 @@ footer nav ul li a:active {
   -webkit-touch-callout: none;
 }
   
+  
   @media (max-width: 40rem) {
    .container span.nav__button {
    top: 0;
    right: 35px;
   }
   }
-
+  
+  #project-nav {
+    top: 10px;
+    right: 10px;
+    }
 .container span.nav__button.open { background-color: rgba(15, 17, 21, 0.7); }
 
 [class^="licon-"]:before,
