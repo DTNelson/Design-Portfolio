@@ -33,6 +33,7 @@
   
   <!-- smooth scroll script
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/responsive-nav.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
       $(function() {
@@ -50,7 +51,6 @@
         });
       });
     </script>
-  <script src="js/responsive-nav.js"></script>
   
 </head>
 
@@ -65,6 +65,7 @@
 	</div><!--end logo-->
 	
 	<div class="container">
+	 <div class="row">
       <span class="nav__button"><i class="licon-reorder"></i></span>
         <nav class="navigation">
           <a href="index.html#Home">Home</a>
@@ -72,9 +73,12 @@
       	  <a href="index.html#Work">Work</a>
       	  <a href="index.html#Contact">Contact</a>
         </nav>
+		</div>
 	</div><!-- end container-->
- 		<!-- Original Navigation menu
-     	  <div class="eleven columns">
+ 	<!-- Original Navigation menu
+	<div class="container">  
+	   <div class="row">
+     	  <div class="twelve columns">
             <nav class="nav-collapse">
               <ul>
                 <li><a href="#Home" class="smoothScroll">Home</a></li>
@@ -83,7 +87,9 @@
                 <li><a href="#Contact" class="smoothScroll">Contact</a></li>
               </ul>
             </nav>
-          </div> --><!-- eleven columns-->
+          </div> 
+		</div>
+	 </div>-->
    
      <div class="container">  
 	   <div class="row">
@@ -257,24 +263,24 @@
   <footer>
     <div class="container">
       <div class="row">
-	    <div class="one column">
+	    <div class="two columns">
 	      <img src="images/Gizmo_DTN.png" class=".u-max-full-width" alt="Gizmo Puppy" />
         </div>
-		
+		<div class="ten columns">
 		<p class="lt-text center-align" id="sig-margin">&copy;2015, Dana Trancoso Nelson</p>
 		  <!--original footer nav
-    		  <nav class="footer">
-    	        <ul>
-    		      <li><a href="#Home" class="smoothScroll">Home</a></li>
-    		      <li><a href="#Services" class="smoothScroll">About</a></li>
-    		      <li><a href="#Work" class="smoothScroll">Work</a></li>
-    		      <li><a href="#Contact" class="smoothScroll">Contact</a></li>
-    		    </ul>
-    	      </nav> footer nav-->
-	   
+		  <nav class="footer">
+	        <ul>
+		      <li><a href="Index.html#Home" class="smoothScroll">Home</a></li>
+		      <li><a href="Index.html#Services" class="smoothScroll">About</a></li>
+		      <li><a href="Index.html#Work" class="smoothScroll">Work</a></li>
+		      <li><a href="Index.html#Contact" class="smoothScroll">Contact</a></li>
+		    </ul>
+	      </nav> footer nav-->
+	    </div> <!-- eleven columns-->
 	  </div> <!-- row-->
-	</div>
-  </footer><!--end footer-->
+	</div> <!-- container-->
+</footer>
   
 <!-- End Document
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -287,5 +293,8 @@
     });
   </script>
    
+  <script>
+        var nav = responsiveNav(".nav-collapse");
+    </script>
 </body>
 </html>
