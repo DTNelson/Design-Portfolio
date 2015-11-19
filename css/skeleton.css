@@ -748,13 +748,13 @@ a:hover {color: #444b5d;}
 .img-top {
   max-width: 80%;
   margin-bottom: -200px;
-  box-sizing: border-box; 
   position: relative;
   bottom: 30%;
   left: 15%;
   transform: translate(-10%, -80%);
   border-style: solid;
   border-color: #000;
+  overflow:visible;
   z-index: 1000;
  } 
    @media (max-width: 550px) {
