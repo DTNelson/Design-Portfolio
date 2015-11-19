@@ -757,7 +757,7 @@ a:hover {color: #444b5d;}
   border-color: #000;
  } 
    @media (max-width: 550px) {
-     .img-top {margin-bottom:-100px;}
+     .img-top {margin-bottom:0px; max-width:100%; bottom: 0; left: 0; transform: none;}
    } 
 
 .thumbnail{
