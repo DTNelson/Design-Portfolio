@@ -749,13 +749,12 @@ a:hover {color: #444b5d;}
   max-width: 80%;
   margin-bottom: -200px;
   position: relative;
-  bottom: 30%;
+  bottom: 0;
   left: 15%;
   transform: translate(-10%, -80%);
   border-style: solid;
   border-color: #000;
-  overflow:visible;
-  z-index: 1000;
+  overflow: visible;
  } 
    @media (max-width: 550px) {
      .img-top {margin-bottom:0px; max-width:100%; bottom: 0; left: 0; transform: none;}
